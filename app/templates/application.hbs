@@ -1,4 +1,4 @@
-{<div class="home-page">
+<div class="home-page">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="index.html">
 			<img src="images/logo-dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
@@ -37,9 +37,11 @@
 		</div>
 	</nav>
 
-     <main class="inner cover text-center">
-         {{outlet}}
-      </main>
+    <div class="container h-100"> <!--class="inner cover text-center">-->
+		<div class="row align-items-center h-100 home-page-nav">
+        	{{outlet}}
+		</div>
+    </div>
 
     <footer class="footer">
 		<div class="container">
@@ -47,11 +49,11 @@
 		</div>
 	</footer>
    <script src="js/popper.min.js"></script>
-	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!--<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="js/tagsinput.js"></script>
 	<script src="js/bootstrap-file.js"></script>
 	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script src="js/bootstrap-datepicker.ru.min.js"></script>
+	<script src="js/bootstrap-datepicker.ru.min.js"></script>-->
 	<script type="text/javascript">
 		$(function () {
 			$('.datepicker').datepicker({
